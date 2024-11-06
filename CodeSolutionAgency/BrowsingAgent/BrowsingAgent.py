@@ -10,6 +10,7 @@ class BrowsingAgent(Agent):
             name="BrowsingAgent",
             description="This agent is designed to navigate and search web effectively.",
             instructions="./instructions.md",
+            model="gpt-4o-mini",
             files_folder="./files",
             schemas_folder="./schemas",
             tools=[Retrieval],

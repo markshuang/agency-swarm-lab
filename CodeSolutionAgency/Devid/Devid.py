@@ -2,7 +2,8 @@ from typing_extensions import override
 import re
 from agency_swarm.agents import Agent
 from agency_swarm.tools import Retrieval
-from instructor import llm_validator
+# from instructor import llm_validator
+from agency_swarm.util.validators import llm_validator
 
 
 class Devid(Agent):
@@ -12,6 +13,7 @@ class Devid(Agent):
             description="Devid is an AI software engineer capable of performing advanced coding tasks.",
             instructions="./instructions.md",
             files_folder="./files",
+            model="gpt-4o-mini",
             schemas_folder="./schemas",
             tools=[Retrieval],
             tools_folder="./tools",

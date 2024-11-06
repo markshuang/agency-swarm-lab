@@ -1,4 +1,4 @@
-from instructor import llm_validator
+from agency_swarm.util.validators import llm_validator
 
 from agency_swarm.agents import Agent
 
@@ -8,6 +8,7 @@ class PlannerAgent(Agent):
             name="PlannerAgent",
             description="CEO of CodeSolutionAgency responsible for overseeing and planning the execution of specific coding tasks.",
             instructions="./instructions.md",
+            model="gpt-4o-mini",
             files_folder="./files",
             schemas_folder="./schemas",
             tools=[],
